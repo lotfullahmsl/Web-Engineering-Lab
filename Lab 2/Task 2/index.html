@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Feedback Form</h1>
+    </div>
+
+    <form method="POST" action="http://www.bahria.com">
+      <div>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <br />
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </fieldset>
+      </div>
+      <br />
+
+      <div>
+        <fieldset>
+          <legend>What did you like most about the campus?</legend>
+          <div>
+            <input type="checkbox" id="campus" name="likes" value="campus" />
+            <label for="campus">Campus</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="students"
+              name="likes"
+              value="students"
+            />
+            <label for="students">Students</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="location"
+              name="likes"
+              value="location"
+            />
+            <label for="location">Location</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="atmosphere"
+              name="likes"
+              value="atmosphere"
+            />
+            <label for="atmosphere">Atmosphere</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="dorm" name="likes" value="dorm_rooms" />
+            <label for="dorm">Dorm Rooms</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="sports" name="likes" value="sports" />
+            <label for="sports">Sports</label>
+          </div>
+        </fieldset>
+      </div>
+      <br />
+
+      <div>
+        <fieldset>
+          <legend>How did you become interested in the college?</legend>
+          <div>
+            <input type="radio" id="friends" name="interest" value="friends" />
+            <label for="friends">Friends</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="television"
+              name="interest"
+              value="television"
+            />
+            <label for="television">Television</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="internet"
+              name="interest"
+              value="internet"
+            />
+            <label for="internet">Internet</label>
+          </div>
+
+          <div>
+            <input type="radio" id="other" name="interest" value="other" />
+            <label for="other">Other</label>
+          </div>
+        </fieldset>
+      </div>
+      <br />
+
+      <div>
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <textarea name="comments" rows="5" cols="40"></textarea>
+        </fieldset>
+      </div>
+      <br />
+
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
